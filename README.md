@@ -19,6 +19,17 @@ I will not be able to help you due to #1, I do not have the time... SORRY!
 >```[include leds/*.cfg]```
 >
 
+>[!WARNING}
+>add the folder to your klipper files section (drag and drop)
+>
+>within printer.cfg under your includes section add this:
+>
+>`[include leds_user.cfg]`
+>`[include leds_core.cfg]`
+>
+>
+
+
 
 >[!NOTE]
 >How to use
