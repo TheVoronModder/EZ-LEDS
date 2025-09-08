@@ -14,7 +14,9 @@ Easy LED control NO Python or added installations
 >
 >within the `leds` folder we need to add some info
 >
->00_hw.cfg
+
+>[!NOTE]
+> name: `00_hw.cfg`
 ```# === Hardware: declare a NeoPixel strip ===
 [neopixel rear_strip]
 pin: <mcu_pin_here>      # e.g. PB0 or gpio26
