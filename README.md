@@ -15,40 +15,18 @@ Easy LED control NO Python or added installations
 >within the `leds` folder we need to add some info
 >
 
->[!NOTE]
-> name: `00_hw.cfg`
+How to use
 
-```
-### Hardware: declare a NeoPixel strip ###
-[neopixel rear_strip]
-pin: <mcu_pin_here>      # e.g. PB0 or gpio26
-chain_count: 30
-color_order: GRB
-initial_RED: 0
-initial_GREEN: 0
-initial_BLUE: 0
-```
+Reload: RESTART
 
-you can add as many by copy/paste the above info in the same folder like this:
+Set different functions:
 
-```
-### Hardware: declare a NeoPixel strip ###
-[neopixel rear_strip]
-pin: <mcu_pin_here>      # e.g. PB0 or gpio26
-chain_count: 30
-color_order: GRB
-initial_RED: 0
-initial_GREEN: 0
-initial_BLUE: 0
+Left shows progress bar: LED_L R=0 G=64 B=255 then LED_EFFECT_L MODE=progress
 
-### Hardware: declare a NeoPixel strip ###
-[neopixel front_strip]
-pin: <mcu_pin_here>      # e.g. PB0 or gpio26
-chain_count: 30
-color_order: GRB
-initial_RED: 0
-initial_GREEN: 0
-initial_BLUE: 0
+Right pulses warm white: LED_R R=255 G=180 B=64 then LED_EFFECT_R MODE=pulse
 
-```
+Turn one side off: LED_OFF_L or LED_OFF_R
 
+Per-side brightness: LED_BRIGHT_L B=0.2, LED_BRIGHT_R B=0.4
+
+Adjust zone split: edit left_to/right_from in LED_ZONES.
