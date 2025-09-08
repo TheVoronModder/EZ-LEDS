@@ -1,6 +1,12 @@
 # EZ-LEDS
 Easy LED control NO Python or added installations
 
+2 config files! Thats it!
+
+Now, NEVER EVER EVER EVER EVER EVER Touch the leds_core.cfg 
+
+I will not be able to help you due to #1, I do not have the time... SORRY!
+
 >[!IMPORTANT]
 >
 >You must create a FOLDER in Klipper called "leds"
@@ -12,8 +18,7 @@ Easy LED control NO Python or added installations
 >
 >```[include leds/*.cfg]```
 >
->within the `leds` folder we need to add some info
->
+
 
 >[!NOTE]
 >How to use
