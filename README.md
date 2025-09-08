@@ -17,7 +17,9 @@ Easy LED control NO Python or added installations
 
 >[!NOTE]
 > name: `00_hw.cfg`
-```# === Hardware: declare a NeoPixel strip ===
+
+```
+### Hardware: declare a NeoPixel strip ###
 [neopixel rear_strip]
 pin: <mcu_pin_here>      # e.g. PB0 or gpio26
 chain_count: 30
@@ -25,5 +27,28 @@ color_order: GRB
 initial_RED: 0
 initial_GREEN: 0
 initial_BLUE: 0
+```
+
+you can add as many by copy/paste the above info in the same folder like this:
+
+```
+### Hardware: declare a NeoPixel strip ###
+[neopixel rear_strip]
+pin: <mcu_pin_here>      # e.g. PB0 or gpio26
+chain_count: 30
+color_order: GRB
+initial_RED: 0
+initial_GREEN: 0
+initial_BLUE: 0
+
+### Hardware: declare a NeoPixel strip ###
+[neopixel front_strip]
+pin: <mcu_pin_here>      # e.g. PB0 or gpio26
+chain_count: 30
+color_order: GRB
+initial_RED: 0
+initial_GREEN: 0
+initial_BLUE: 0
+
 ```
 
